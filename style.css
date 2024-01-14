@@ -1,0 +1,130 @@
+body {
+  /* Centering the card */
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f8f9fe;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 445px;
+  border-radius: 20px;
+  background-color: #ffffff;
+
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.card h1 {
+  margin-bottom: 0;
+  color: #283657;
+}
+
+.card p {
+  color: #828ca5;
+}
+
+.plan {
+  display: flex;
+  align-items: center; /*  */
+
+  justify-content: flex-start; /*  */
+  padding: 0 20px;
+
+  width: 350px;
+  background-color: #f8f9fe;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.plan img {
+  width: 45px;
+  height: 45px;
+
+  margin-right: 20px; /*  */
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price h4 {
+  margin-bottom: 1.5px;
+  font-weight: 900;
+  color: #283657;
+}
+
+.price p {
+  margin-top: 1.5px;
+  font-weight: 500;
+  color: #828ca5;
+}
+
+.plan button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #785fcf;
+  font-weight: 900;
+  text-decoration: underline;
+
+  margin-left: auto; /*  */
+}
+
+.plan button:hover {
+  color: #766cf1;
+}
+
+#btn1 {
+  background-color: #382ae1;
+  font-weight: 700;
+  padding: 17px 0;
+  color: white;
+  width: 350px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border: none;
+  cursor: pointer;
+
+  box-shadow: 0 8px 6px -6px #e2dffa;
+}
+
+#btn1:hover {
+  background-color: #766cf1;
+}
+
+#cancel {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 35px;
+  font-weight: 700;
+
+  color: #828ca5;
+}
+
+#cancel:hover {
+  color: #283657;
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: 325px;
+    box-sizing: content-box;
+  }
+}
